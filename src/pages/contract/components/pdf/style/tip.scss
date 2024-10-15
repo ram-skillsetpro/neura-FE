@@ -1,0 +1,54 @@
+.Tip__compact {
+  cursor: pointer;
+  background: var(--app-navigation-background-color);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  padding: 4px 10px;
+  color: var(--default-font-color);
+  border-radius: 6px;
+  font-family: var(--default-font);
+  min-width: 160px;
+  ul li {
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 8px 0px 8px 0;
+    color: var(--default-font-color);
+    font-weight: 600;
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--border-color2);
+    }
+  }
+}
+
+.Tip__card {
+  padding: 10px;
+  background: #fff;
+  background-clip: padding-box;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(37, 40, 43, 0.2);
+  width: 280px;
+}
+
+.Tip__card textarea {
+  font-size: 16px;
+  width: 200px;
+  height: 70px;
+  font-family: var(--default-font);
+}
+
+.Tip__card input[type="submit"] {
+  margin-top: 5px;
+  font-size: 14px;
+  font-family: var(--default-font);
+  border-radius: 12px;
+  cursor: pointer;
+  height: auto;
+  min-width: auto;
+  padding: 3px 24px;
+  width: auto;
+}
+
+.Tip__card__textarea {
+  max-width: 360px;
+  font-family: var(--default-font);
+}

@@ -1,0 +1,37 @@
+.page-number-container {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #525252;
+  user-select: none;
+}
+
+.remove-button {
+  background: var(--button-red);
+  display: flex;
+  border: none;
+  height: 24px;
+  line-height: 24px;
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 0 12px;
+  cursor: pointer;
+  font-size: size(10);
+}
+
+.snippet-share {
+  .shared-with {
+    color: #6f6f6f;
+    font-size: 0.7rem;
+    margin-left: 4px;
+  }
+  .shared-chips {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+  .shared-chips-sec {
+    gap: 6px !important;
+  }
+}

@@ -1,0 +1,97 @@
+
+.tab-header.horizontal {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tab-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  position: relative;
+
+  &.active {
+    background-color: #fff; /* Style for the active tab */
+    border-bottom: 4px solid var(--logo-color); /* Add a bottom border to indicate the active tab */
+    z-index: 1; /* Raise the active tab above other tabs for the visual effect */
+  }
+}
+
+/* Tab content styles */
+.tab-content {
+  position: relative;
+  top: -1px; /* Adjust the position to align with the active tab */
+  z-index: 0; /* Set the z-index to be behind the active tab */
+  .wrapper {
+    .table-scroll {
+      overflow-x: auto;
+    }
+  }
+}
+
+.alerts-by-me {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  > div.has-dropdown {
+    padding: 0 16px;
+  }
+}
+
+
+.action-col {
+   padding: 0 20px;
+   width: auto;
+}
+
+   a.custom-alert {
+    div.alert-content {
+      padding: 12px;
+    }
+    &.error {
+      color: var(--default-font-color);
+      div.alert-content {
+      background-color: #FDEDED;
+    }
+  }
+    &.warning {
+      color: var(--default-font-color);
+      div.alert-content {
+      background-color: #FFF4E5;
+    }
+  }
+    &.info {
+      color: var(--default-font-color);
+      div.alert-content {
+      background-color: #E5F6FD;
+    }
+  }
+  }
+
+.ack-alert {
+  width: 100%;
+  input[type=checkbox].ack {
+    &:hover {
+      cursor: pointer;
+    }
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+tr.file-row {
+  th.file-row-acknowledged {
+    text-align: center;
+  }
+}
+
+
+@import "pages/contract-data-list/contract-data-list.styles.scss";

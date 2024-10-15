@@ -1,0 +1,134 @@
+// main css to compile
+
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+//variables
+
+:root {
+  --default-font: "Open Sans", "Helvetica Neue", "Verdana", sans-serif;
+  --default-background-color: #dce1e6;
+  --comments-background-color: #f4f6f9;
+  --comments-header-background-color: #c6cdd4;
+  --default-font-color: #232323;
+  --app-navigation-background-color: #ffffff;
+  --logo-color: #ff6868;
+  --button-red: #ef4747;
+  // --link-color: #121212;
+  --icon-bg: #e0e4e7;
+  --tab-bg: #f0f2f5;
+  --text-light-color: #525252;
+  --border-color: #aeb7c0;
+  --border-color1: #cccccc;
+  --border-color2: #e3e3e3;
+  --border-color3: #b8bdc4;
+  --comment-bg: #dfe3eb;
+  --comment-bg1: #f4f6f9;
+  --comment-bg2: #dfe4eb;
+  --link-color: #488fce;
+  --dark-blue: #444488;
+  --card-bg: #b1bac5;
+  --green-bg: #78d537;
+  --green-bg1: #7da379;
+  --dark-btn-bg: #5c677d;
+  --dark-bg: #566373;
+  --tool-tip-bg: #333e4f;
+  --orange-bg: #ffa268;
+  --compare-bg: #c5ccd8;
+  --icon-dark-color: #555b65;
+  --icon-active-color: #7c828d;
+  --white: #fff;
+  --check-bg: #d8d8d8;
+  --success-bg: #80ab88;
+  --light-text: #7e8ba3;
+  --yellow-light: #f9e076;
+  --light-gray: #9199a8;
+  --yellow-light-bg: #fffce3;
+
+  --menu-active: #e4e9ee;
+  --lighter-text: #a1a1aa;
+  --high-color: #ff0000;
+  --moderate-color: #ffb800;
+  --low-color: #00d400;
+  --high-bg: #f5365c;
+  --moderate-bg: #ff8a00;
+  --medium-bg: #f9e100;
+  --low-bg: #9cb1c6;
+  --light-high-bg: #fed8e5;
+  --light-moderate-bg: #fefce8;
+  --light-medium-bg: #fefdf4;
+  --light-low-bg: #f2f9ff;
+  --alert-number-bg: #f4f4f5;
+  --alert-number-color: #71717a;
+  --border-color4: rgba(17, 17, 17, 0.15);
+  --chips-text-color: #4f4f4f;
+  --box-bg: #eff5fa;
+  --border-color5: rgba(13, 13, 13, 0.1);
+  --obligation-inactive-bg: #f31260;
+  --obligation-active-bg: #17c964;
+  --hr-risk-bg: #fbf498;
+  --market-risk-bg: #ffc295;
+  --supply-chain-risk-bg: #cbacfd;
+  --marketing-risk-bg: #9ac8ff;
+  --financial-risk-bg: #45dc97;
+  --legal-risk-bg: #baff9a;
+  --operational-risk-bg: #ff9aef;
+  --regulatory-risk-bg: #ffb9c9;
+  --data-security-risk-bg: #ffa29b;
+  --technology-risk-bg: #f5bdff;
+  --compliance-risk-bg: #bfbfbf;
+  --rnd-risk-bg: #9ab0f1;
+  --default-dark-font-color: #232323;
+  --form-background-color: #dfe8eb;
+  --toastify-toast-width: 426px !important;
+  --toastify-toast-min-height: 56px !important;
+}
+
+//styles
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+a {
+  cursor: pointer;
+}
+
+.container {
+  width: auto;
+  height: auto;
+  background-color: var(--default-background-color);
+  color: var(--default-font-color);
+  padding: 0;
+  margin: 0;
+}
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 80%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+.Toastify__toast-icon {
+  width: 16px !important;
+}
+
+// @import 'assets/css/controls';
+// @import 'assets/css/popups';

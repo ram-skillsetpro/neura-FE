@@ -1,0 +1,131 @@
+.comment-sec {
+  width: 100%;
+  padding-bottom: 94px;
+  a {
+    color: var(--link-color);
+    text-decoration: underline;
+  }
+  .comment-user {
+    display: flex;
+    align-items: center;
+    .ic-member {
+      width: 26px;
+      height: 26px;
+      min-width: 26px;
+      border-radius: 100%;
+      overflow: hidden;
+      display: flex;
+      font-size: 11px;
+      font-weight: 600;
+      color: #fff;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .c-user-name {
+      font-size: size(11);
+      font-weight: 700;
+      color: var(--default-font-color);
+      max-width: 240px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .received-message {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 16px;
+    .received-card {
+      background: var(--comment-bg2);
+      &::before {
+        content: "";
+        top: 100%;
+        left: -10px;
+        position: absolute;
+        background: transparent;
+        transform: rotate(-90deg);
+        height: 0px;
+        width: 0px;
+        border-left: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 20px solid var(--comment-bg2);
+      }
+    }
+  }
+  .received-card,
+  .send-card {
+    padding: 12px;
+    border-radius: 6px;
+    font-size: size(11);
+    line-height: 1.5;
+    width: 305px;
+    color: var(--default-font-color);
+    position: relative;
+    word-wrap: break-word;
+    p {
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    ul,
+    ol {
+      padding: 0;
+      margin: 0;
+      list-style-type: square;
+
+      li {
+        margin-left: 16px;
+        margin-bottom: 4px;
+      }
+    }
+    ol {
+      list-style-type: auto;
+    }
+  }
+  .send-message {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 16px;
+    .send-card {
+      background: var(--comment-bg1);
+      position: relative;
+      &::before {
+        content: "";
+        top: 100%;
+        right: -10px;
+        position: absolute;
+        background: transparent;
+        transform: rotate(90deg);
+        height: 0px;
+        width: 0px;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 20px solid var(--comment-bg1);
+      }
+      .plus-ic {
+        margin-top: 2px;
+      }
+    }
+  }
+}
+.comment-form-sec {
+  color: var(--default-font-color);
+  &.fixed-comment {
+    margin-top: 40px;
+    position: fixed;
+    width: 426px;
+    right: 21px;
+    bottom: 0;
+    padding: 10px 0;
+    background: var(--comments-header-background-color);
+  }
+}

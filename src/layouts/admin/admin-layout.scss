@@ -1,0 +1,55 @@
+// :root {
+//   --default-background-color: #e9e9e9;
+//   --default-font-color: #232323;
+//   --app-navigation-background-color: #ffffff;
+//   --logo-color: #ff6868;
+//   --button-red: #ef4747;
+//   --link-color: #121212;
+// }
+
+// //styles
+
+// body {
+//   font-family: "Open Sans", sans-serif;
+//   margin: 0;
+//   padding: 0;
+//   font-size: 16px;
+// }
+
+// .container {
+//   width: auto;
+//   height: 100vh; //auto;
+//   background-color: var(--default-background-color);
+//   color: var(--default-font-color);
+//   padding: 0;
+//   margin: 0;
+//   position: relative;
+//   // overflow: hidden;
+//   min-width: 980px; //Stop after
+//   // display: flex;
+//   // flex-direction: column;
+// }
+
+// @import "assets/css/app-controls";
+// @import "assets/css/V3/app-style3";
+// @import "assets/css/V3/app-header";
+// @import "assets/css/app-sidebar";
+// @import "assets/css/app-dashboard-viewer";
+// @import "assets/css/app-dashboard-filelister";
+// @import "assets/css/open-file.scss";
+// @import 'assets/css/dataTables.scss';
+
+// @import "assets/css/app-controls";
+@import "assets/css/V3/app-style3";
+// @import "assets/css/V3/app-controls";
+@import "assets/css/V3/app-header";
+
+//contract view styles
+@import "assets/css/V3/middle-outer";
+@import "assets/css/V3/right-sharing-tab";
+@import "assets/css/V3/right-comments-tab";
+@import "assets/css/V3/prompt-chat";
+
+h2 {
+  line-height: 1rem;
+}

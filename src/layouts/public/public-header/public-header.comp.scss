@@ -1,0 +1,84 @@
+// @import "assets/css/top-nav";
+
+// top nav
+.navigation {
+  padding: 0 20px;
+  background: #fff;
+  // padding: 24px 0;
+
+  //try
+
+  position: sticky;
+  top: 0;
+  z-index: 998;
+
+  nav {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    -webkit-backdrop-filter: saturate(100%) blur(8px);
+    backdrop-filter: saturate(100%) blur(8px);
+    // border-radius: 16px;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: 14px;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      padding: 6px 18px;
+      display: block;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      background: #f4f4f5;
+      border-radius: 6px;
+      li {
+        padding: 4px;
+      }
+    }
+    .page-navigation {
+      @media (max-width: 767px) {
+        display: none;
+      }
+      ul li a {
+        color: #232323;
+      }
+    }
+    .account-navigation {
+      ul li {
+        background: transparent;
+      }
+    }
+
+    .logo-navigation {
+      a.logo {
+        background-image: url(https://simpleo-user-static.s3.us-west-1.amazonaws.com/webassets/images/simpleo-ai-logo.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        height: 34px;
+        width: 120px;
+        margin: 0 18px;
+      }
+    }
+    .page-navigation {
+    }
+    .account-navigation {
+      padding: 0px 18px;
+      ul {
+        background: transparent;
+      }
+    }
+  }
+}
+
+.signup-terms {
+  flex-direction: column;
+}

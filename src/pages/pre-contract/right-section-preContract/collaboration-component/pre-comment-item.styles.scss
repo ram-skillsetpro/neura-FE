@@ -1,0 +1,18 @@
+.reply-box {
+    border: solid 1px #cacaca;
+    border-left: solid 2px #f26c6c;
+}
+.highlight-current-user {
+    color: var(--logo-color);
+    font-weight: bold;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.highlight-other-user {
+    color: var(--link-color);
+    font-weight: bold;
+    &:hover {
+        text-decoration: underline;
+    }
+}

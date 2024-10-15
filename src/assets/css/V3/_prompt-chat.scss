@@ -1,0 +1,122 @@
+.ml-2{margin-left: 8px;}
+.prompt-right-wrap{
+    padding-right: 10px;
+}
+.scroll-custom{
+    height: 100%;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+		background-color: transparent;
+		width: 8px;
+	}
+	&:hover::-webkit-scrollbar {
+
+		width: 8px;
+   }
+
+   &:hover::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, .2);
+	border-radius: 24px;
+    &:hover{
+        background-color:rgba(0, 0, 0, .4);
+    }
+   }
+}
+.prompt-chat-scroll{
+    overflow-y: auto;
+    height: calc(100vh - 134px);
+}
+.prompt-right-sec{
+    display: flex;
+    height: 100%;
+    .comment-sec{
+        display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    }
+}
+.prompt-icon-sec{
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease-in;
+    margin-right: 16px;
+    background: var(--white);
+    &.selected,&:hover{
+        background: var(--logo-color);
+        .prompt-icon{
+  
+            background-color: var(--white);
+
+            // img,svg{
+            //     path{
+            //         fill: var(--white);
+            //     }
+            //     circle{
+            //         fill: var(--white);
+            //     }
+            // }  
+        }
+    }
+    .prompt-icon{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        mask-size: 20px 20px;
+        mask-repeat: no-repeat;
+        mask-position: center center;
+        mask-image: var(--icon-file);
+        -webkit-mask-size: 20px 20px;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center center;
+        -webkit-mask-image: var(--icon-file);
+
+        background-color: var(--logo-color);
+        &.icon-img{
+            --icon-file: url("assets/images/bot-icon.svg");
+        }
+        // img,svg{
+        //     width:20px;
+        //     height: 20px;
+        //     path{
+        //         fill: var(--logo-color);
+        //     }
+        //     circle{
+        //         fill: var(--logo-color);
+        //     }
+        // }
+    }
+}
+.prompt-chat-sec{
+    max-width: 425px;
+    margin: auto;
+    min-width: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    .prompt-default{
+        background: var(--comment-bg2);
+        padding: 20px 10px;
+        margin-bottom: 10px;
+        width:100%;
+        .prompt-default-info{
+            font-size: size(14);
+            font-weight: 600;
+            line-height: 1.4;
+        }
+    }
+    .comment-form-sec{
+        width: 100%;
+    }
+}
+
+.data-card ul li a{
+    text-decoration: none;
+}

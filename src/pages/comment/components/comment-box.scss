@@ -1,0 +1,34 @@
+.annotated-text {
+  border: solid 1px #ffe375;
+  padding: 8px 10px;
+  border-radius: 4px;
+  background: #fff6d2;
+  cursor: pointer;
+
+  p{
+    margin-bottom: 4px !important;
+    color: #777;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .annotated-message{
+    font-style: italic;
+    color: #8e8e8e;
+  }
+}
+
+.highlight-current-user {
+    color: var(--logo-color);
+    font-weight: bold;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.highlight-other-user {
+    color: var(--link-color);
+    font-weight: bold;
+    &:hover {
+        text-decoration: underline;
+    }
+}

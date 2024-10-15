@@ -1,0 +1,15 @@
+.share-outer-wrap .info-row .info-row-left {
+    width: 40%;
+    min-width: 40%;
+    padding-right: 12px;
+}
+
+.share-outer-wrap .info-row .info-row-right {
+    flex-grow: 1;
+}
+
+.share-outer-wrap .info-row {
+    display: flex;
+    font-size: 0.6875rem;
+    line-height: 1.4;
+}

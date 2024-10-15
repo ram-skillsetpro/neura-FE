@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>app-icons/plus@2x</title>
+    <g id="app-icons/plus" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M13,5.35139456 C13.5522847,5.35139456 14,5.75433828 14,6.25139456 L14,20.1 C14,20.5970563 13.5522847,21 13,21 C12.4477153,21 12,20.5970563 12,20.1 L12,6.25139456 C12,5.75433828 12.4477153,5.35139456 13,5.35139456 Z" id="Path" fill="#444488" fill-rule="nonzero"></path>
+        <path d="M13,5 C13.5522847,5 14,5.40294373 14,5.9 L14,19.7486054 C14,20.2456617 13.5522847,20.6486054 13,20.6486054 C12.4477153,20.6486054 12,20.2456617 12,19.7486054 L12,5.9 C12,5.40294373 12.4477153,5 13,5 Z" id="Path-Copy" fill="#444488" fill-rule="nonzero" transform="translate(13, 12.8243) rotate(90) translate(-13, -12.8243)"></path>
+    </g>
+</svg>

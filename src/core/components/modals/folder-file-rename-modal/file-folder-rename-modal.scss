@@ -1,0 +1,186 @@
+@import "assets/css/V3/custom-font-size";
+.p-card {
+  background: var(--white);
+  width: 100%;
+  padding: 12px;
+}
+.playbook-list-add {
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--border-color4);
+  }
+  padding: 4px 0;
+}
+.playbook-search {
+  background: var(--icon-bg);
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+  justify-content: space-between;
+  .custom-select {
+    width: 275px;
+  }
+  input[type="search"] {
+    background: transparent;
+    border: solid 1px #ccc;
+    font-size: size(14);
+    min-width: 250px;
+  }
+}
+.font-normal {
+  font-weight: 400 !important;
+}
+.playbook-outer-wrap {
+  width: 640px;
+  box-shadow: 0 18px 24px rgba(0, 0, 0, 0.2);
+  background: var(--white);
+  padding: 20px;
+  margin: auto;
+  border-radius: 6px;
+}
+.playbook-inner {
+  position: relative;
+}
+// 9April
+
+.playbook-info {
+  position: relative;
+  padding-right: 60px;
+}
+.playbook-checkbox {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  input.custom-checkbox[type="checkbox"] {
+    position: relative;
+    border: 2px solid var(--success-bg);
+    border-radius: 2px;
+    background: none;
+    cursor: pointer;
+    line-height: 0;
+    margin: 0 0.6em 0 0;
+    outline: 0;
+    padding: 0 !important;
+    vertical-align: text-top;
+    height: 32px;
+    width: 32px;
+    -webkit-appearance: none;
+    opacity: 0.5;
+  }
+
+  input.custom-checkbox[type="checkbox"]:hover {
+    opacity: 1;
+  }
+
+  input.custom-checkbox[type="checkbox"]:checked {
+    background-color: var(--success-bg);
+    opacity: 1;
+  }
+  input.custom-checkbox[type="checkbox"]:checked::before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 4px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    margin: -1px -1px 0 -1px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: 2;
+  }
+  // input.custom-checkbox[type="checkbox"]:before {
+  //   content: "";
+  //   position: absolute;
+  //   right: 50%;
+  //   top: 50%;
+  //   width: 4px;
+  //   height: 10px;
+  //   border: solid transparent;
+  //   border-width: 0 2px 2px 0;
+  //   margin: -1px -1px 0 -1px;
+  //   transform: rotate(45deg) translate(-50%, -50%);
+  //   z-index: 2;
+  // }
+}
+
+.playbook-frm {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 12px;
+  &:hover {
+    .rm-ques {
+      display: block;
+    }
+    .play-input {
+      border: 1px solid #232323;
+    }
+  }
+  &.no-lable {
+    padding-left: 100px;
+  }
+  label {
+    min-width: 100px;
+    display: block;
+    margin-bottom: 0;
+  }
+  .play-input {
+    background: transparent;
+    width: 100%;
+    // margin-bottom: 12px;
+    padding-right: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+  }
+}
+.rm-ques {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  display: none;
+}
+.playbook .file-row-fileName span {
+  padding-left: 0;
+}
+
+// .playbook .file-title-table {
+//   width: 300px;
+//   max-width: 300px;
+// }
+
+.expand-toggle-btn {
+  background: #5c677d;
+  border: 0;
+  border-radius: 12px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: -40px;
+  top: -10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.open {
+    .arrow-down {
+      transform: rotate(-136deg);
+      -webkit-transform: rotate(-136deg);
+      margin-top: 3px;
+    }
+  }
+  .arrow-down {
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-top: -3px;
+    transition: 0.2s all ease-in;
+  }
+}

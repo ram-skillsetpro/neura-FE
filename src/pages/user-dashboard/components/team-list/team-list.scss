@@ -1,0 +1,115 @@
+.team-list-1 {
+  // .file-row-action {
+  //   display: flex;
+  //   justify-content: center;
+  //   min-height: 34px;
+  // }
+
+  td {
+    font-size: 0.75rem;
+  }
+
+  .file-item-icon {
+    width: 19px;
+    padding: 0;
+  }
+
+  .icon {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1.6rem;
+    border-radius: 20px;
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  .team-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .team {
+    background-image: url(assets/images/icon-team-color.svg);
+    background-color: #cccccc;
+    border-radius: 100%;
+    padding: 4px;
+  }
+
+  .file-row-fileSelector {
+    width: 57px;
+  }
+
+  .dropdown-list {
+    position: absolute;
+    top: calc(100% - 3px);
+    right: -6px;
+    z-index: 999999;
+    text-align: left;
+    font-weight: normal;
+    // display: none;
+
+    &.large {
+      min-width: 300px;
+      max-width: 300px;
+    }
+    &.medium {
+      min-width: 160px;
+      max-width: 300px;
+    }
+
+    &.small {
+      min-width: 120px;
+      max-width: 240px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 8px 0;
+      margin: 10px 0 0 0;
+      border-radius: 8px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      position: relative;
+
+      &:before {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff; //var(--logo-color);
+        display: block;
+        width: 0px;
+        height: 0px;
+        content: "";
+        position: absolute;
+        top: -10px;
+        right: 10px;
+      }
+
+      > li {
+        > a {
+          display: block;
+          color: #464646; //var(--default-font-color);
+          padding: 8px 12px;
+          border-bottom: 1px solid #e3e3e3;
+
+          &:hover {
+            background-color: #f2f2f2;
+            color: #000000;
+          }
+        }
+
+        &:last-child {
+          > a {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

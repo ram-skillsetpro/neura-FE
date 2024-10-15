@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.sidebar {
+  overflow: auto;
+  color: rgb(119, 119, 119);
+  background: linear-gradient(
+    rgb(249, 248, 247),
+    rgb(251, 250, 248) 46px,
+    rgb(251, 251, 249) 120px,
+    rgb(248, 247, 245) 35%,
+    rgb(249, 248, 246)
+  );
+}
+
+.sidebar__highlights {
+  list-style: "none";
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.highlight__location {
+  margin-top: 0.5rem;
+  text-align: right;
+  font-size: 10px;
+}
+
+.highlight__image {
+  overflow: auto;
+  max-width: 300px;
+  border: 1px dashed;
+}
+
+.sidebar__highlight {
+  padding: 1rem;
+  cursor: pointer;
+  transition: background 140ms ease-in;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.sidebar__highlight:hover {
+  background: rgba(145, 145, 145, 0.1);
+}
+
+a {
+  color: #d35400;
+}
+
+blockquote {
+  padding: 0;
+  margin: 0;
+  quotes: "\201c" "\201d";
+}
+blockquote:before {
+  content: open-quote;
+}
+blockquote:after {
+  content: close-quote;
+}
+
+.text-highlight {
+  background: #fcff34;
+  font-weight: 100;
+}
+
+.rotate-btn {
+  cursor: pointer;
+}
+
+.pdf-rotate-btn {
+  border-radius: 50px;
+}
+
+.rotate-btn:hover {
+  /* transform: rotate(90deg); */
+  animation-name: spin;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.pdf-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  //z-index: 999;
+  z-index: 3;
+  align-items: center;
+  height: 40px;
+}
+
+.custom-search-container {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .search-btn {
+    margin-right: 0px;
+    border-radius: 0;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  input {
+    height: 24px;
+    border: solid 1px #ff6868;
+    border-right: none;
+    border-radius: 0;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    padding-left: 8px;
+    outline: none;
+  }
+}
+
+.page-zoom-container {
+  border: solid 1px #ff6968;
+  padding: 4px 6px;
+  border-radius: 50px;
+  height: 24px;
+  font-size: 14px;
+  margin-right: 6px;
+  color: #ff6968;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.page-nav-container {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .search-btn {
+    margin-right: 0px;
+    border-radius: 0;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  input {
+    height: 24px;
+    border: solid 1px #ff6868;
+    outline: none;
+    border-radius: 50px;
+    width: 50px;
+    text-align: center;
+    appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
+
+.page-next-btn {
+  transform: rotate(270deg);
+  &:disabled {
+    pointer-events: none;
+  }
+}
+
+.page-prev-btn {
+  transform: rotate(270deg);
+  margin-right: 0;
+  &:disabled {
+    pointer-events: none;
+  }
+}
+
+.msg-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.highlight-delete-btn {
+  margin-right: 0;
+  z-index: 99;
+}
+
+.Highlight--scrolledTo .Highlight__part {
+  background: #fcff34 !important;
+}
+
+.search-pager {
+  margin-right: 6px;
+  border: solid 1px #ff6968;
+  padding: 2px 7px;
+  border-radius: 50px;
+  color: #737373;
+  color: #fff;
+  background: #ff6968;
+}
+
+.next-prev-btn {
+  // background: #fff;
+  // color: #ff6968;
+}
+
+.zoom-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlighted {
+  background: #0000;
+}
+
+.pdf-rotate-big {
+  position: fixed;
+  right: 4px;
+  top: 11px;
+  width: 36px !important;
+  height: 36px !important;
+  padding: 5px 5px !important;
+}
+
+.pdf-page-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #ffffff;
+  padding: 8px 12px;
+  border-top-right-radius: 12px;
+  border-right: solid 1px #e1e1e1;
+  border-top: solid 1px #dedede;
+  color: #9c9c9c;
+  background: linear-gradient(#ffffff, #ececec);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.textLayer span[role="presentation"] {
+  display: flex;
+}
+
+.pdfViewer {
+  textarea {
+    color: #0000 !important;
+    outline: none !important;
+    border: none !important;
+  }
+
+  .annotationLayer {
+    z-index: 0 !important;
+  }
+}

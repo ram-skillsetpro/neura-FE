@@ -1,0 +1,28 @@
+@import "core/components/modals/share-file-modal/share-popup";
+@import "core/components/modals/delete-file-modal/delete-file-modal.scss";
+.back-btn {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  display: inline-flex;
+  justify-content: center;
+  cursor: pointer;
+  border: 0;
+  margin-right: 24px;
+  .icon-img {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    mask-size: 20px 20px;
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-image: var(--background);
+    -webkit-mask-size: 20px 20px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+    -webkit-mask-image: var(--background);
+    background-size: cover;
+    background-color: var(--icon-dark-color);
+    --background: url(assets/images/back-icon.svg);
+  }
+}

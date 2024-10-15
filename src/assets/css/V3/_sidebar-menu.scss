@@ -1,0 +1,92 @@
+@import "custom-font-size";
+//styles
+.aside-bar-menu {
+  width: 175px;
+  min-width: 175px;
+
+  .navigation-sec {
+    padding-right: 21px;
+    padding-top: 58px;
+    position: sticky;
+    top: 69px;
+  }
+
+  .navigation-vertical {
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    ul {
+      li {
+        list-style: none;
+        font-size: size(11);
+        margin-bottom: 2px;
+        border-bottom: 1px solid var(--border-color3);
+        a {
+          color: var(--default-font-color);
+          padding: 10px 0 10px 20px;
+          font-size: size(11);
+          font-weight: 400;
+          line-height: 1.1;
+          display: inline-block;
+          position: relative;
+          transition: all 0.3s ease-in;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+
+            width: 16px;
+            height: 16px;
+            display: flex;
+            mask-size: 16px 16px;
+            mask-repeat: no-repeat;
+            mask-position: center center;
+            mask-image: var(--background);
+            -webkit-mask-size: 16px 16px;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center center;
+            -webkit-mask-image: var(--background);
+            background-size: cover;
+            background-color: #9199a8;
+            --background: url(assets/images/forward-icon.svg);
+          }
+
+          &:hover,
+          &.active {
+            &::before {
+              background-color: #555b65;
+            }
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+.icon-color {
+  background-color: var(--icon-dark-color);
+}
+
+.search-info {
+  .search-result-row {
+    border-bottom: none !important;
+  }
+}
+.sidebar-menu-sec {
+  height: calc(100vh - 150px);
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    width: 8px;
+  }
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+  }
+}

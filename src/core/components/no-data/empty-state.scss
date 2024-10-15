@@ -1,0 +1,44 @@
+@import "assets/css/V3/custom-font-size";
+.empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  .empty-info {
+    color: var(--light-text);
+    text-align: center;
+    font-size: size(12);
+    line-height: 1.5;
+    .file-img {
+      width: 36px;
+      display: flex;
+      margin: auto;
+      margin-bottom: 10px;
+      img {
+        width: 36px;
+        height: 36px;
+        opacity: 0.4;
+      }
+    }
+    .icon-emty {
+      width: 26px;
+      height: 26px;
+      display: flex;
+      margin: auto;
+      margin-top: 10px;
+      mask-size: 26px 26px;
+      mask-repeat: no-repeat;
+      mask-position: center center;
+      mask-image: var(--background);
+      -webkit-mask-size: 26px 26px;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center center;
+      -webkit-mask-image: var(--background);
+      background-size: cover;
+      background-color: #9199a8;
+      --background: url(assets/icons/back-icon.svg);
+    }
+  }
+}

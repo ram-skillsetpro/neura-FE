@@ -1,0 +1,90 @@
+.vertical-table {
+  display: flex;
+  flex-direction: column;
+  border-collapse: collapse;
+  max-height: 600px;
+  overflow: auto;
+}
+
+.vertical-table-row {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 24px;
+}
+
+.vertical-table-column {
+  flex: 1;
+  display: flex;
+  padding:16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.vertical-table-header {
+  flex: 1;
+  font-weight: bold;
+  width: 116px;
+}
+
+.vertical-table-cell {
+  flex: 5;
+  &.team-list {
+    // flex: 1;
+  }
+}
+
+.vertical-table-column:last-child {
+  border-bottom: none;
+}
+
+
+.alert-details-modal {
+  max-height: calc(100% - 64px);
+  max-width: 696px;
+  min-width: 696px;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+
+.table {
+  display: flex;
+  flex-direction: column;
+  border-collapse: collapse;
+  flex: 1;
+  .table-body {
+    max-height: 200px;
+    overflow: auto;
+  }
+}
+
+.table-row {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.table-column {
+  flex: 1;
+  padding: 8px;
+  text-align: center;
+  // white-space: nowrap;
+}
+
+.header {
+  font-weight: bold;
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #000;
+}
+
+.header .table-column {
+  text-align: center;
+}
+
+.table-column:last-child {
+  border-right: none;
+}
+
+
+@import "pages/alerts/view/alerts-view.styles.scss";

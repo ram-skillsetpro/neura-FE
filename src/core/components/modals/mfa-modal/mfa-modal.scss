@@ -1,0 +1,68 @@
+@import "assets/css/V3/mfa-popup";
+
+.fs14 {
+  font-size: 14px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-body {
+  color: #232323;
+}
+
+.flex {
+  display: flex;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+
+.pt-3 {
+  padding-top: 12px;
+}
+
+.link-btn {
+  font-size: 14px;
+  border: none;
+  background: transparent;
+  color: #488fce;
+  cursor: pointer;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+.mr-3 {
+  margin-right: 12px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+button:disabled {
+  background: #e3e3e3;
+  border: 1px solid #e3e3e3;
+  cursor: not-allowed;
+}

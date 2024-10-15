@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-cross</title>
+    <g id="icon-cross" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M24.5,3.5 C25.6045695,3.5 26.5,4.3954305 26.5,5.5 L26.5,22 L42,22 C43.1045695,22 44,22.8954305 44,24 C44,25.1045695 43.1045695,26 42,26 L26.5,26 L26.5,43.5 C26.5,44.6045695 25.6045695,45.5 24.5,45.5 C23.3954305,45.5 22.5,44.6045695 22.5,43.5 L22.5,26 L6,26 C4.8954305,26 4,25.1045695 4,24 C4,22.8954305 4.8954305,22 6,22 L22.5,22 L22.5,5.5 C22.5,4.3954305 23.3954305,3.5 24.5,3.5 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero" transform="translate(24, 24.5) rotate(45) translate(-24, -24.5)"></path>
+    </g>
+</svg>

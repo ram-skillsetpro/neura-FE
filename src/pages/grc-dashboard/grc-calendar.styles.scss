@@ -1,0 +1,104 @@
+.calendar-legend {
+  // Add your styles here
+  display: flex;
+  gap: 12px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .legend-color {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+
+  .legend-items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .legend-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    min-width: 16px;
+  }
+
+  .legend-label {
+    font-size: 14px;
+    color: #232323 !important;
+  }
+}
+
+.rbc-header {
+  padding: 12px 0;
+}
+
+.rbc-calendar {
+  background: transparent !important;
+  font-family: var(--default-font) !important;
+  padding: 0 !important;
+}
+
+.rbc-toolbar {
+  font-weight: 700;
+}
+
+.chart-sec {
+  color: #232323 !important;
+}
+
+.rbc-time-view,
+.rbc-month-view {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.rbc-toolbar button {
+  padding: 0.5rem 1rem;
+  background: #fff;
+}
+
+.rbc-toolbar button {
+
+  &:hover,
+  &.active {
+    background-color: #ff6868;
+    color: #fff;
+    border-color: #ff6868;
+  }
+}
+
+// .rbc-row-segment {
+//   height: 100px;
+//   display: flex;
+//   justify-content: end;
+//   align-items: end;
+// }
+.rbc-row-segment .rbc-event-content {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+///  Added to hide title of risk type or risk type name from UI in calendar
+.rbc-event {
+  display: inline-block !important;
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 50% !important;
+  overflow: hidden;
+  text-indent: -9999px;
+  /* Hides the text but keeps it accessible for screen readers */
+  background-color: inherit;
+  /* Use the event background color */
+}

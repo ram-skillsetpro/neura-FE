@@ -1,0 +1,39 @@
+.file-list-name {
+  position: relative;
+}
+
+// .file-title-table {
+//   max-width: 150px;
+//   @media (min-width: 1368px) {
+//     max-width: 99%;
+//   }
+// }
+
+.file-title-table:hover::after {
+  content: attr(data-fulltext);
+  position: absolute;
+  padding: 6px 12px;
+  background-color: var(--tool-tip-bg);
+  color: var(--app-navigation-background-color);
+  white-space: normal;
+  border-radius: 6px;
+  z-index: 1;
+  left: 0;
+  top: 22px;
+  min-width: fit-content;
+}
+
+// .other-files-view {
+//   .file-row-action {
+//     display: flex;
+//     justify-content: center;
+//     min-height: 34px;
+//   }
+// }
+
+.file-action {
+  display: inline-block;
+  //margin-top: 7px;
+}
+
+@import "pages/user-dashboard/components/file-option.styles";

@@ -1,0 +1,125 @@
+@import "assets/css/V3/custom-font-size";
+
+.user-filter-menu-card {
+  display: block !important;
+  height: auto;
+}
+
+.contract-filter-menu-card {
+  display: block !important;
+  height: auto;
+}
+
+.filter-menu-card {
+  max-height: 319px;
+  overflow-y: auto;
+}
+
+.filter-active {
+  background: #f0f2f5;
+}
+
+.date-range-container {
+  .rdrDateDisplayWrapper {
+    border-top-right-radius: 6px;
+  }
+  .rdrCalendarWrapper {
+    background: #ffffff00;
+  }
+  .rdrDefinedRangesWrapper {
+    background: #00000000;
+  }
+  .rdrStaticRange {
+    &:first-child {
+      border-top-left-radius: 6px;
+      &:hover {
+        border-top-left-radius: 6px;
+        background: #00000000;
+      }
+      .rdrStaticRangeLabel {
+        border-top-left-radius: 6px;
+      }
+    }
+  }
+}
+
+.date-range-box {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 18px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.green-button {
+  background: var(--success-bg);
+  display: flex;
+  border: none;
+  height: 24px;
+  line-height: 24px;
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 0 12px;
+  cursor: pointer;
+  font-size: size(10);
+}
+
+.remove-button {
+  background: var(--button-red);
+  display: flex;
+  border: none;
+  height: 24px;
+  line-height: 24px;
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 0 12px;
+  cursor: pointer;
+  font-size: size(10);
+}
+
+.date-range-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 16px;
+}
+
+.apply-btn {
+  min-width: 26px;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  mask-size: 26px 26px;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-image: var(--background);
+  -webkit-mask-size: 26px 26px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-image: var(--background);
+  background-size: cover;
+  background-color: #555b65;
+  --background: url(assets/images/tick-apply.svg);
+  cursor: pointer;
+  border: none;
+  &.active {
+    background-color: #80ab88;
+  }
+}
+
+.filter-reset {
+  min-width: 26px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: var(--logo-color);
+  background-image: url(assets/images/icon-cross.svg);
+  background-size: 16px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+  border: none;
+}

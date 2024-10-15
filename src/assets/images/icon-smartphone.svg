@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="584px" height="718px" viewBox="0 0 584 718" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-smartphone</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-smartphone" transform="translate(25.3333, 25.6667)" stroke="#2B2D2F" stroke-width="50">
+            <path d="M533.333333,400 C533.333333,525.706667 533.333333,588.563333 494.28,627.613333 C455.23,666.666667 392.373333,666.666667 266.666667,666.666667 C140.958667,666.666667 78.105,666.666667 39.0523333,627.613333 C0,588.563333 0,525.706667 0,400 L0,266.666667 C0,140.958667 0,78.105 39.0523333,39.0523333 C78.105,0 140.958667,0 266.666667,0 C392.373333,0 455.23,0 494.28,39.0523333 C533.333333,78.105 533.333333,140.958667 533.333333,266.666667" id="Path" stroke-linecap="round"></path>
+            <line x1="366.666667" y1="100" x2="166.666667" y2="100" id="Path" stroke-linecap="round"></line>
+            <circle id="Oval" cx="266.666667" cy="500" r="66.6666667"></circle>
+        </g>
+    </g>
+</svg>

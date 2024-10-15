@@ -1,0 +1,470 @@
+.popup-containers {
+	width: 100vw;
+	height: 100vh;
+	min-height: 600px;
+	position: fixed; 
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  background-color: rgba(119, 118, 118, 0.7); /* 0.7 is the opacity value */
+	display: flex !important;
+	align-items: center; 
+	justify-content: center;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	z-index: 9999;
+	overflow: scroll;
+
+	&.opens {
+		display: flex;
+	}
+
+	h2, h3 {
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: -0.32px;
+		background: linear-gradient(to bottom right, #ffffff, #775d5d);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	}
+
+	h4 {
+		padding: 0;
+		margin: 8px 0;
+	}
+
+.file-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+  color: #818181;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  div.file-item-name {
+    display: flex;
+  }
+
+  div.file-item-name > p.processing-error {
+    color: red;
+  }
+
+  &.header-row {
+    font-weight: 500;
+    color: #000000;
+  }
+
+  &.each-item {
+    &:hover,
+    &:active {
+      color: #000000;
+      cursor: pointer;
+      background-color: #f7f7f7;
+    }
+  }
+
+  &:last-child {
+    border: none;
+  }
+
+  > div {
+    box-sizing: border-box;
+  }
+  &-selector {
+    width: 6%;
+    padding: 9px 1% !important;
+    text-align: center;
+    padding: 12px 1%;
+  }
+  &-icon {
+    width: 3.4%;
+    text-align: center;
+    padding: 12px 1%;
+
+    &:has(.user) {
+      width: 4%;
+    }
+  }
+  &-name {
+    width: 40%;
+    text-align: left;
+    padding: 12px 1%;
+  }
+  &-owner {
+    width: 30%;
+    text-align: left;
+    padding: 12px 1%;
+  }
+  &-date {
+    width: 15%;
+    text-align: right;
+    padding: 12px 1%;
+  }
+
+  &-access,
+  &-role {
+    width: 15%;
+    text-align: left;
+    padding: 12px 1%;
+  }
+
+  &-size {
+    width: 10%;
+    text-align: right;
+    padding: 12px 1%;
+  }
+  &-controls {
+    width: 3.4%;
+    text-align: right;
+    padding: 12px 1%;
+  }
+  &-uploading {
+    width: 60%;
+    text-align: left;
+    padding: 12px 1%;
+  }
+  &-parsing {
+    width: 60%;
+    text-align: left;
+    padding: 12px 1%;
+  }
+  &-ready {
+    width: 60%;
+    text-align: left;
+    padding: 12px 1%;
+  }
+
+  &-form {
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    padding: 1px 2%;
+  }
+
+  // icons
+  .icon {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    vertical-align: bottom;
+    margin-right: 1em;
+    margin-top: 0px;
+    display: inline-block;
+    text-align: center;
+
+    &.pdf {
+      background-image: url(assets/images/icon-pdf.svg);
+    }
+
+    &.folder {
+      background-image: url(assets/images/icon-folder.svg);
+    }
+
+    &.doc {
+      background-image: url(assets/images/icon-word.svg);
+    }
+
+    &.xls {
+      background-image: url(assets/images/icon-xls.svg);
+    }
+
+    &.rtf {
+      background-image: url(assets/images/icon-txt.svg);
+    }
+
+    &.txt {
+      background-image: url(assets/images/icon-txt.svg);
+    }
+
+    &.anyfile {
+      background-image: url(assets/images/icon-generic-file.svg);
+    }
+
+    &.team {
+      background-image: url(assets/images/icon-team-color.svg);
+      background-color: #cccccc;
+      border-radius: 100%;
+    }
+
+    &.control {
+      background-image: url(assets/images/icon-more-vertical-dark.svg);
+      margin-right: 0;
+    }
+
+    &.member {
+      margin-right: 2em;
+
+      img {
+        object-fit: cover;
+        width: inherit;
+        height: inherit;
+        border-radius: 100%;
+      }
+
+      &.empty {
+        background-color: #4a4a4a;
+        border-radius: 100%;
+        color: #ffffff;
+        font-size: 10px;
+        padding: 3px 0;
+        height: 14px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+	.popups {
+    min-width: 500px;
+    max-width: 700px;
+    height: auto;
+    border-radius: 12px;
+    background: #fff;
+    border-radius: 12px;
+    width: 60vw;
+    position: relative;
+    padding: 24px 0 12px 0;
+		ul, ol {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			> li {
+				position: relative;
+				padding-left: 24px;
+				&:before {
+					content: "-";
+					color: var(--logo-color);
+					font-size: 24px;
+					font-weight: bold;
+					position: absolute;
+					left: 0px;
+					top: -8px;
+				}
+			}
+		}
+
+		.wrapper {
+      margin: 10px;
+			position: relative;
+      padding: 12px 2%;
+      width: 96%;
+			.close-popups {
+				cursor: pointer;
+				position: absolute;
+				right: 12px;
+				top: 12px;
+				width: 24px;
+				height: 24px;
+				border-radius: 100%;
+				background-color: var(--logo-color);
+				background-image: url(assets/images/icon-cross.svg);
+				background-size: 16px;
+				background-position: center center;
+				background-repeat: no-repeat;
+				transition: all .3s;
+
+				&:hover {
+					transform: rotate(90deg);
+				}
+			}
+
+			.inner-wrapper {
+				display: flex;
+				align-items: stretch; 
+				justify-content: stretch;
+			}
+
+      .file-item-name {
+        width: auto;
+        color: #000;
+        margin-left: 5px;
+      }
+		}
+
+		&-slide {
+			width: 38%;
+			background-color: #111111; 
+			color: #fff;
+			padding: 0px 6%;
+
+			&-image {
+				width: auto;
+				margin: 48px 0;
+
+				&-container {
+					width: 100%;
+					height: auto;
+					margin: 6px auto 24px auto;
+					position: relative;
+
+					img {
+						width: 90%; 
+						height: auto;
+						border-radius: 12px;
+						z-index: 200;
+						position: relative;
+					}
+
+					&:before {
+						content: "";
+						width: 86%;
+						height: 90%;
+						border-radius: 12px;
+						background-color: #ffffff;
+						display: block;
+						z-index: 99;
+						position: absolute;
+						top: 24px;
+						left: 2%;
+						opacity: .6;
+					}
+					&:after {
+						content: "";
+						width: 82%;
+						height: 90%;
+						border-radius: 12px;
+						background-color: #ffffff;
+						display: block;
+						z-index: 99;
+						top: 24px;
+						position: absolute;
+						top: 32px;
+						left: 4%;
+						opacity: .4;
+					}
+				}
+			}
+
+			&-text {
+				width: auto;
+				margin: 12px 0;
+			}
+		}
+
+
+		&-form {
+			width: 42%;
+			background-color: var(--form-background-color);
+			color: var(--default-dark-font-color);
+			padding: 24px 4% 12px 4%;
+			text-align: center;
+
+			a {
+				color: #000;
+				text-decoration: underline;
+			}
+
+			&-wrapper {
+				padding: 12px 24px;
+			}
+
+			.logo {
+				background-image: url(https://simpleo-user-static.s3.us-west-1.amazonaws.com/webassets/images/simpleo-ai-logo.svg);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: contain;
+				height: 24px; 
+				width: auto;
+				margin: 24px 0 24px 0;
+				@media all and (max-height: 720px) {
+					height: 20px;
+					margin: 12px 0 12px 0;
+				}
+			}
+
+			&-container {
+				form {
+					text-align: left;
+				}
+
+
+			}
+		}
+	}
+}
+.file-items.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align the header vertically centered */
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 2px 0;
+  font-weight: bold;
+}
+
+.file-item-name {
+  flex: 1;
+  text-align: left;
+  padding: 12px 0;
+}
+
+.file-items.header-row-no-bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px; 
+  border-bottom: 1px solid #e3e3e3;
+  padding: 12px 0;
+}
+
+.file-item-name-no-bg {
+  flex: 1;
+  text-align: left;
+  padding: 12px 0;
+}
+
+
+.pink-button {
+ 
+  background-color: rgb(241, 111, 133);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pink-button:hover {
+  background-color: rgb(238, 55, 85); 
+}
+.sharesd {
+  color: green;
+  font-weight: 700;
+}
+
+.not-shared {
+  color: red;
+}
+
+.close-popups {
+  cursor: pointer;
+  position: absolute;
+  top: 12px; 
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: var(--logo-color);
+  background-image: url(assets/images/icon-cross.svg);
+  background-size: 16px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+}

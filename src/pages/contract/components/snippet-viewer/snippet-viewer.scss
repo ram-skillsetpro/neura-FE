@@ -1,0 +1,112 @@
+.container {
+  width: 70vw !important;
+  overflow-y: scroll !important;
+  height: 100vh !important;
+  margin-top: 56px !important;
+}
+
+.cross {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 0;
+  background: #ff6868;
+  padding: 6px;
+  color: #fff;
+  cursor: pointer;
+  top: 56px;
+  z-index: 9;
+
+  &:active {
+    background: #df6060;
+  }
+}
+.app-logo {
+  width: 175px;
+
+  img {
+    max-width: 120px;
+    width: 100%;
+  }
+}
+.header-sec {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 69px;
+  margin: auto;
+  background-color: var(--comments-header-background-color);
+  // background: var(--app-navigation-background-color);
+}
+.app-header {
+  min-height: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 21px;
+  // max-width: 1440px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.download-pdf-btn {
+  background: #ff6868;
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  .dw-ic {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    mask-size: 16px 16px;
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-image: var(--icon-file);
+    -webkit-mask-size: 16px 16px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+    -webkit-mask-image: var(--icon-file);
+    background-color: #fff;
+    --icon-file: url("assets/images/download-icons.svg");
+  }
+  .tool-tipN {
+    background: var(--tool-tip-bg);
+    font-size: size(11);
+    white-space: nowrap;
+    padding: 8px;
+    position: absolute;
+    top: calc(100% + 4px);
+    right: 0;
+    border-radius: 4px;
+    color: var(--white);
+    display: none;
+    z-index: 2;
+    text-transform: capitalize;
+  }
+  &:hover {
+    .tool-tipN {
+      display: block;
+    }
+  }
+}
+.pdf-scroll {
+  height: 100vh;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    width: 8px;
+  }
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+  }
+}

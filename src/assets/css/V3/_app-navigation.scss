@@ -1,0 +1,109 @@
+//app-navigation
+
+.navigation {
+	background-color: var(--app-navigation-background-color);
+	height: 60px;
+	position: absolute; //sticky;
+	top: 0; 
+	left: 0; 
+	right: 0;
+	display: flex;
+	flex-direction: row;
+	z-index: 999;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+	
+	a {
+		display: block;
+	}
+	
+	&-logo {
+		width: 260px;
+		height: 60px;
+		position: relative;
+	}
+	
+	&-alerts {
+		width: 60px;
+		height: 60px;
+	}
+	
+	&-user {
+		width: 60px;
+		height: 60px;
+		text-align: center;
+	}
+	
+	&-search {
+		flex-grow: 1;
+	}
+	
+	a.logo {
+		background-image: url(https://simpleo-user-static.s3.us-west-1.amazonaws.com/webassets/images/simpleo-ai-logo.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+		height: 60px; 
+		width: 120px;
+		margin: 0 18px;
+	}
+	
+	a.icon {
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 48px;
+		height: 60px; 
+		width: 60px;
+		cursor: pointer;
+	}
+	
+	.bell {
+		background-image: url(assets/images/icon-bell.svg);
+		position: relative;
+		
+		&.active {
+			&:after {
+				content: "";
+				display: block;
+				position: absolute; 
+				top: 14px;
+				right: 14px;
+				background-color: red; //var(--logo-color);
+				width: 10px;
+				height: 10px;
+				border-radius: 32px;
+				z-index: 999;
+			}
+		}
+	}
+	
+	.user {
+		img {
+			border-radius: 100%;
+			width: 28px;
+			height: 28px;
+			object-fit: cover;
+			margin: 16px auto;
+		}
+	}
+	
+	input[type=search] {
+		height: 42px;
+		border-radius: 4px;
+		-webkit-appearance: none;
+		display: block; 
+		background-color: #F2F2F2;
+		border: 1px solid #F2F2F2;
+		height: 42px;
+		font-size: 16px;
+		color: var(--default-font-color);
+		padding: 12px 12px 12px 48px;
+		box-sizing: border-box;
+		background-repeat: no-repeat;
+		background-position: 8px center;
+		background-image: url(assets/images/icon-search@4x.png);
+		background-size: 24px;
+		width: 60vw;
+		max-width: 1440px;
+		margin: 9px auto 9px 8vw;
+	}
+}

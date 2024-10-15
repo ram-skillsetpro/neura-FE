@@ -1,0 +1,21 @@
+.ic-member {
+  font-style: normal;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  font-size: 11px;
+  color: var(--white);
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

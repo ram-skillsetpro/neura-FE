@@ -1,0 +1,23 @@
+.container {
+  width: 70vw !important;
+  overflow-y: scroll !important;
+  height: 100vh !important;
+  margin-top: 56px !important;
+}
+
+.cross {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 0;
+  background: #ff6868;
+  padding: 6px;
+  color: #fff;
+  cursor: pointer;
+  top: 56px;
+  z-index: 9;
+
+  &:active {
+    background: #df6060;
+  }
+}

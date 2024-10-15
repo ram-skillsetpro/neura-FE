@@ -1,0 +1,32 @@
+@import "../../../../core/models/modal/modal.component.scss";
+
+.popup-containers {
+  > div.popups {
+    // background-color: var(--default-background-color);
+    min-width: 420px;
+    width: fit-content;
+    .member-details {
+      display: flex;
+      justify-content: center;
+      flex-direction: inherit;
+        box-shadow: none;
+      > div.member-details-header {
+        margin: 0 40px 0 0;
+        div {
+          p {
+            font-weight: 700;
+          }
+        }
+      }
+       > div.member-details-data {
+        // margin: 0 40px;
+        div{
+          p {
+            // text-align: center
+          }
+        }
+       }
+  
+  }
+  }
+}

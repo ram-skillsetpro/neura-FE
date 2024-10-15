@@ -1,0 +1,30 @@
+.ch-box {
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.close-popups-upload {
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: var(--logo-color);
+    background-image: url(assets/images/icon-cross-light.svg);
+    background-size: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+    z-index: 1;
+  &:hover {
+		transform: rotate(90deg);
+	}
+  &.drive-folder {
+    top: 0;
+    right: 0;
+  }
+}

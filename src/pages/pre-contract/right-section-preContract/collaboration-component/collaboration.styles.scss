@@ -1,0 +1,20 @@
+@import "pages/comment/components/comment-box";
+
+
+.tab-collaboration {
+  height: calc(100% - 160px)!important;
+  flex-direction: column;
+  overflow-x: hidden;
+  padding: 0 0 16px 0!important;
+  position: absolute;
+  bottom: 0;
+  width: 426px;
+}
+
+.text-area-collaboration {
+  margin:0;
+}
+
+.comment-sec-6 {
+  padding-bottom: 0!important;
+}

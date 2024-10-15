@@ -1,0 +1,35 @@
+
+a.custom-alert {
+  > div.alert-content {
+    display: flex;
+    align-items: center;
+    > span.alert-text {
+      padding: 0 8px;
+    }
+    .severity-icon {
+      font-size: 18px;
+    }
+  }
+  &.error {
+    background-color: #FDEDED;
+    span.severity-icon.error {
+      color: #d32f2f;
+    }
+  }
+  &.warning {
+    background-color: #FFF4E5;
+    span.severity-icon.warning {
+      color: #ed6c02;
+    }
+  }
+  &.info {
+    background-color: #E5F6FD;
+    span.severity-icon.info {
+      color: #0288d1;
+    }
+  }
+}
+
+
+
+

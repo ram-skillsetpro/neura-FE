@@ -1,0 +1,69 @@
+.delete-team-modal {
+  width: 360px;
+  height: 180px;
+  background: #ffffff;
+  border-radius: 12px;
+
+  .close-popups {
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: var(--logo-color);
+    background-image: url(assets/images/icon-cross-light.svg);
+    background-size: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+
+  .delete-team-modal-body {
+    max-height: 250vh;
+    padding: 15px 15px;
+    padding-bottom: 62px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 129px;
+
+    span {
+      color: #f00;
+    }
+  }
+
+  .delete-team-modal-header {
+    padding: 14px 14px;
+    border-bottom: solid 1px #eee;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    box-shadow: none;
+    // box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+  }
+
+  .delete-team-modal-footer {
+    padding: 18px 18px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+}

@@ -1,0 +1,242 @@
+//buttons
+
+a {
+  text-decoration: none;
+  color: #fff; //var(--link-color);
+}
+
+.button {
+  margin: 0 0 0 6px;
+  font-weight: bold;
+  padding: 6px 12px;
+  font-family: "Open Sans", "Helvetica Neue", "Verdana", sans-serif;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &-flat,
+  &.disabled {
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    color: #fff; //inherit;
+  }
+  &-green {
+    border: 1px solid var(--success-bg);
+    background-color: var(--success-bg);
+    color: #fff;
+  }
+  &-red {
+    border: 1px solid var(--logo-color);
+    background-color: var(--logo-color);
+    color: #fff;
+  }
+  &-dark-gray {
+    border: 1px solid var(--dark-btn-bg);
+    background-color: var(--dark-btn-bg);
+    color: #fff;
+  }
+
+  &-red-outline {
+    border: 1px solid var(--logo-color);
+    color: var(--logo-color);
+  }
+
+  &:hover {
+    background-color: var(--button-red);
+    border: 1px solid var(--button-red);
+    color: #ffffff;
+    // box-shadow: inset 2px 3px rgba(0, 0, 0, 0.5);
+  }
+}
+
+span.forgot-password {
+  text-align: right;
+}
+
+input {
+  font-size: 14px;
+}
+
+label {
+  // width: 360px;
+  font-size: 14px;
+  // margin-top: 18px;
+  // margin-bottom: 2px;
+  display: inline-block;
+}
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+
+  span {
+    flex-grow: 4;
+  }
+}
+.checkbox-label {
+  margin-top: 0;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="search"] {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  height: 36px;
+  color: var(--default-font-color);
+  padding: 12px;
+  box-sizing: border-box;
+  margin-right: 6px;
+  min-width: 240px;
+}
+
+input[type="password"] {
+}
+input[type="url"] {
+  width: 80%;
+}
+
+input[type="submit"],
+input[type="button"] {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  background-color: var(--logo-color);
+  border: 1px solid var(--logo-color);
+  height: 36px;
+  min-width: 120px;
+  box-sizing: border-box;
+  margin-right: 6px;
+
+  &:hover {
+    background-color: var(--button-red);
+    border: 1px solid var(--button-red);
+  }
+}
+
+textarea {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  min-height: 36px;
+  color: var(--default-font-color);
+  padding: 12px;
+  box-sizing: border-box;
+  margin-right: 6px;
+  min-width: 240px;
+  width: 100%;
+  font-size: 1em;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #999;
+  height: 14px;
+  width: 14px;
+  vertical-align: middle;
+  margin-right: 6px;
+  margin-top: -1px;
+
+  &:checked {
+    background-color: var(--logo-color);
+    border-color: var(--logo-color);
+  }
+}
+.has-dropdown {
+  position: relative;
+  display: inline-block;
+  &:hover {
+    .dropdown-list {
+      // display: block;
+    }
+  }
+}
+.dropdown-list {
+  position: absolute;
+  top: calc(100% - 3px);
+  right: -10px;
+  z-index: 9999;
+  text-align: left;
+  font-weight: normal;
+  display: none;
+
+  &.medium {
+    min-width: 160px;
+    max-width: 300px;
+  }
+
+  &.small {
+    min-width: 120px;
+    max-width: 240px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 8px 0;
+    margin: 10px 0 0 0;
+    border-radius: 8px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+    &:before {
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #fff; //var(--logo-color);
+      display: block;
+      width: 0px;
+      height: 0px;
+      content: "";
+      position: absolute;
+      top: -10px;
+      right: 10px;
+    }
+
+    > li {
+      > a {
+        display: block;
+        color: #464646; //var(--default-font-color);
+        padding: 8px 12px;
+        border-bottom: 1px solid #e3e3e3;
+
+        &:hover {
+          background-color: #f2f2f2;
+          color: #000000;
+        }
+      }
+
+      &:last-child {
+        > a {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.app-close-popups {
+  cursor: pointer;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  // background-color: var(--logo-color);
+  background-image: url(assets/images/icon-cross-dark.svg);
+  background-size: 16px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+}

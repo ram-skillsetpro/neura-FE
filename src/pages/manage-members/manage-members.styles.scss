@@ -1,0 +1,120 @@
+@import "pages/user-dashboard/dashboard-container.scss";
+@import "pages/manage-team/team.scss";
+// @import 'pages/alerts/create/alerts-create.scss';
+.dropdown-list {
+  z-index: 99;
+}
+
+.add-member {
+  display: flex;
+  flex-direction: column;
+  .row {
+    flex: 1;
+    display: flex;
+    margin-bottom: 10px;
+    .add-member-input {
+      display: flex;
+      flex-direction: column;
+      label {
+        width: 120px;
+      }
+    }
+  }
+}
+
+.wrapper.nobg.list-controls.manage-members {
+  display: flex;
+  justify-content: end;
+  > div.list-meta {
+    width: auto;
+  }
+}
+.file-item-name-manage-members {
+  width: 40%;
+}
+
+// td[class^="file-row-"] {
+//   border-color: red;
+// }
+.add-member-btn {
+  width: 180px;
+}
+.member-width {
+  width: auto;
+  padding: 12px 1%;
+  justify-content: end;
+  margin: 0 12px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+div.member-table {
+  > div.table-scroll {
+    > table.files-table {
+      thead {
+        > tr {
+          > th {
+            padding: 0;
+            > span {
+              > div.file-item-selector {
+                height: 0;
+                width: 100%;
+                > input[type="checkbox"] {
+                  margin: 0 20px;
+                  margin-top: -20px;
+                }
+              }
+              > div.file-item-selector {
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          > td {
+            padding: 0;
+            > div.file-item-selector {
+              height: 0;
+              width: 100%;
+              padding: 0;
+              > input[type="checkbox"] {
+                margin: 0 20px;
+                margin-top: -20px;
+              }
+            }
+            > div.file-item-icon {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.add-member-show {
+  visibility: visible;
+  opacity: 1;
+  height: 300px;
+  transition:
+    visibility 0.6s linear,
+    height 0.2s linear;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.add-member-hide {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  transition:
+    visibility 0s linear 0.2s,
+    opacity 0.2s linear,
+    height 0.33s linear;
+}

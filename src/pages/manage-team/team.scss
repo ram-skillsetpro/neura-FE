@@ -1,0 +1,180 @@
+.breadcrumb-li {
+  max-width: 140px !important;
+}
+
+.inline-list-custom {
+  border-radius: 4px !important;
+  border: 1px solid #ccc !important;
+  height: 36px !important;
+  color: var(--default-font-color) !important;
+  padding: 12px !important;
+  box-sizing: border-box !important;
+  margin-right: 6px !important;
+  width: 240px !important;
+}
+
+.add-btn {
+  &.w-fix {
+    width: 120px !important;
+  }
+}
+
+.add-team-show {
+  visibility: visible;
+  opacity: 1;
+  height: 140px;
+  transition:
+    visibility 0.6s linear,
+    height 0.2s linear;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.add-team-hide {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  transition:
+    visibility 0s linear 0.2s,
+    opacity 0.2s linear,
+    height 0.33s linear;
+}
+
+.team-table {
+  .option-width {
+    width: 36px;
+  }
+
+  .file-row-action {
+    width: 40px;
+    // display: flex;
+    // justify-content: center;
+    // min-height: 34px;
+  }
+
+  .file-item-controls {
+    text-align: right;
+    padding: 0;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #e3e3e3;
+    color: #818181;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-grow: 2;
+  }
+
+  th {
+    width: 25%;
+    text-align: left;
+    padding: 12px 12px !important;
+    flex-grow: 2;
+  }
+
+  td {
+    width: 25%;
+    text-align: left;
+    padding: 12px 12px !important;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+  }
+
+  .file-row {
+    border-bottom: none;
+  }
+
+  .file-row-icon {
+    padding: 0;
+
+    // justify-content: flex-end;
+    width: 56px;
+  }
+
+  .file-row-icon {
+    padding-left: 24px;
+  }
+
+  .team-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .file-row-fileSelector {
+    width: 14px;
+    display: flex !important;
+    align-items: center !important;
+    padding-left: 36px !important;
+  }
+
+  .file-item-icon {
+    width: 19px;
+    padding: 0;
+  }
+
+  .file-item-selector {
+    height: 0;
+    input {
+      margin-top: -15px;
+    }
+  }
+
+  a {
+    color: #000 !important;
+  }
+
+  .paginate_button {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .previous {
+    margin-right: 24px !important;
+  }
+
+  .next {
+    margin-left: 18px !important;
+  }
+
+  .current {
+    color: #ff6868 !important;
+  }
+
+  .disabled {
+    pointer-events: none;
+    color: #8f8f8f !important;
+  }
+
+  .table-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-top: solid 1px #e3e3e3;
+  }
+
+  .dataTables_paginate {
+    display: flex;
+    a {
+      padding: 0 !important;
+    }
+  }
+
+  .file-row {
+    white-space: normal !important;
+  }
+
+  .table-scroll {
+    overflow-x: unset;
+  }
+}

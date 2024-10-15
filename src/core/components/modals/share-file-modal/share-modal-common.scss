@@ -1,0 +1,230 @@
+.team-user-list-modal {
+  min-width: 640px;
+  max-width: 960px;
+  max-height: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 12px;
+  width: 640px;
+  position: relative;
+  padding: 0px;
+  box-shadow: 0 18px 24px rgba(0, 0, 0, 0.2);
+
+  .close-popups {
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: var(--logo-color);
+    background-image: url(assets/images/icon-cross-light.svg);
+    background-size: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+
+  .team-user-header {
+    padding: 20px 28px 10px 20px;
+    border-bottom: solid 1px #eee;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    //box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+  }
+
+  .team-user-body {
+    min-height: 350px;
+    // min-height: 480px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 15px 20px;
+    padding-bottom: 62px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .team-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    border-bottom: 1px solid #e3e3e3;
+    color: #818181;
+    &:hover {
+      background: #f7f7f7;
+      color: #151515;
+    }
+  }
+
+  .item-header {
+    font-weight: 600;
+  }
+
+  .team-list-cell {
+    width: 25%;
+    text-align: left;
+    flex-grow: 2;
+  }
+
+  .team-selector {
+    text-align: right;
+    width: 100px;
+  }
+
+  .loader-box {
+    padding: 10px 15px;
+    color: #a0a0a0;
+  }
+
+  .team-user-footer {
+    padding: 18px 18px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -3%, rgba(0, 0, 0, 0), #fff 31%);
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+}
+
+.team-user-table {
+  .option-width {
+    width: 36px;
+  }
+
+  .file-row-action {
+    width: 40px;
+    // display: flex;
+    // justify-content: center;
+    // min-height: 34px;
+  }
+
+  .file-item-controls {
+    text-align: right;
+    padding: 0;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #e3e3e3;
+    color: #818181;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-grow: 2;
+  }
+
+  th {
+    width: 2%;
+    text-align: left;
+    padding: 12px 1%;
+    flex-grow: 2;
+  }
+
+  td {
+    width: 2%;
+    text-align: left;
+    padding: 12px 1%;
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+  }
+
+  .file-row {
+    border-bottom: none;
+  }
+
+  .file-row-icon {
+    padding: 0;
+
+    // justify-content: flex-end;
+    width: 56px;
+  }
+
+  .file-row-icon {
+    padding-left: 24px;
+  }
+
+  .team-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .file-row-fileSelector {
+    width: 14px;
+    display: flex !important;
+    align-items: center !important;
+    padding-left: 36px;
+  }
+
+  .file-item-icon {
+    width: 19px;
+    padding: 0;
+  }
+
+  .file-item-selector {
+    height: 0;
+    input {
+      margin-top: -15px;
+    }
+  }
+
+  a {
+    color: #000 !important;
+  }
+
+  .paginate_button {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .previous {
+    margin-right: 24px !important;
+  }
+
+  .next {
+    margin-left: 18px !important;
+  }
+
+  .current {
+    color: #ff6868 !important;
+  }
+
+  .disabled {
+    pointer-events: none;
+    color: #8f8f8f !important;
+  }
+
+  .table-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+  }
+
+  .dataTables_paginate {
+    display: flex;
+    // gap: 16px;
+  }
+}

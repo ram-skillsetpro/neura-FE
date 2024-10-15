@@ -1,0 +1,167 @@
+// Admin css
+
+$font-family-primary: "Open Sans", "Helvetica Neue", "Verdana", sans-serif;
+//variables
+
+//styles
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+html {
+  // overflow-y: scroll;
+  font-size: 16px;
+  line-height: 1.5;
+  @media (min-width: 1367px) {
+    font-size: 18px;
+  }
+}
+html,
+body {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+body {
+  font-family: $font-family-primary;
+  // line-height: 1;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  width: auto;
+  height: 100vh; //auto;
+  background-color: var(--default-background-color);
+  color: var(--default-font-color);
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  min-width: 980px; //Stop after
+  // display: flex;
+  // flex-direction: column;
+}
+
+// @import 'app-main';
+// @import 'app-header';
+// @import 'app-common';
+// @import 'middle-outer';
+// @import 'right-sharing-tab';
+// @import 'right-comments-tab';
+// @import 'app-controls';
+// @import 'app-navigation';
+// @import 'app-sidebar';
+// @import 'app-dashboard-viewer';
+// @import 'app-dashboard-filelister';
+// @import 'dataTables';
+
+@import "custom-font-size";
+@import "assets/css/V3/app-main";
+@import "assets/css/V3/app-common";
+@import "assets/css/V3/app-controls";
+
+// @import 'assets/css/V3/app-header';
+// @import 'assets/css/V3/middle-outer';
+// @import 'assets/css/V3/right-sharing-tab';
+// @import 'assets/css/V3/right-comments-tab';
+
+// @import 'boilerplate';
+// @import 'popups';
+
+.popup-container {
+  width: 100vw;
+  height: 100vh;
+  min-height: 600px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 999;
+  display: none;
+  overflow: scroll;
+
+  &.open {
+    display: flex;
+  }
+
+  .popup {
+    min-width: 860px;
+    max-width: 960px;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 12px;
+    width: 60vw;
+    position: relative;
+    padding: 0px;
+
+    .close-popups {
+      cursor: pointer;
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      width: 24px;
+      height: 24px;
+      border-radius: 100%;
+      background-color: var(--logo-color);
+      background-image: url(assets/images/icon-cross.svg);
+      background-size: 16px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      transition: all 0.3s;
+      z-index: 999;
+
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+
+    .files-share-list {
+      width: 100%;
+      min-height: 480px;
+      max-height: 80vh;
+      overflow: scroll;
+
+      .wrapper {
+        padding: 12px 2%;
+        width: 96%;
+
+        &.sticky {
+          position: sticky;
+          padding-top: 24px;
+          top: 0;
+          background-color: #fff;
+          box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      .file-item {
+        width: 100%;
+      }
+
+      input[type="search"] {
+        padding: 12px;
+        width: 75%;
+        // height: auto;
+      }
+    }
+  }
+}
+input {
+  font-family: var(--default-font);
+}
